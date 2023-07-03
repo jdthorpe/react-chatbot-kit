@@ -277,7 +277,7 @@ const Chat = ({
         <ConditionallyRender
           condition={!!customComponents.header}
           show={
-            customComponents.header && customComponents.header(actionProvider)
+            customComponents.header && customComponents.header({ actionProvider, actions, state, setState })
           }
           elseShow={
             <div className="react-chatbot-kit-chat-header">{header}</div>
