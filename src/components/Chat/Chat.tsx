@@ -132,6 +132,7 @@ const Chat = ({
       scrollIntoView,
       actionProvider,
       payload: messageObject.payload,
+      message: messageObject.message,
       actions,
     };
 
